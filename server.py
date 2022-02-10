@@ -19,13 +19,13 @@ def index():
 
 @app.route('/about')
 def about():
-        return render_template()
+        return render_template("about.html")
 
 
 # Routing Methods
 @app.route('/')             # The "@" decorator associates this route with the function immediately following
 def hello_world():
-    return 'Hello World!'  # Return the string 'Hello World!' as a response
+    return 'ROOT'  # Return the string 'Hello World!' as a response
 
 @app.route('/wow')
 def wow():
