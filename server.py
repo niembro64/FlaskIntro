@@ -15,7 +15,7 @@ app = Flask(__name__) # Create a new instance of the Flask class called "app"
 
 @app.route('/index')
 def index():
-    return render_template("index.html")
+    return render_template("index.html", phrase = "hello", times=5)
 
 @app.route('/about')
 def about():
