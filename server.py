@@ -1,6 +1,7 @@
 
 # Imports
-from flask import Flask  # Import Flask to allow us to create our app
+import re
+from flask import Flask, render_template  # Import Flask to allow us to create our app
 
 
 # Instatiating from Flask
@@ -12,6 +13,13 @@ app = Flask(__name__) # Create a new instance of the Flask class called "app"
 
 
 
+@app.route('/index')
+def index():
+    return render_template("index.html")
+
+@app.route('/about')
+def about():
+        return render_template()
 
 
 # Routing Methods
