@@ -1,6 +1,5 @@
 
 # Imports
-import re
 from flask import Flask, render_template  # Import Flask to allow us to create our app
 
 
